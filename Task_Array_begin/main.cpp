@@ -1,32 +1,32 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
-void main()//Первая домашка по массивам
+void main()//РџРµСЂРІР°СЏ РґРѕРјР°С€РєР° РїРѕ РјР°СЃСЃРёРІР°Рј
 {
 	setlocale(LC_ALL, "");
-	//int n; cout << "Введите размер массива: "; cin >> n;
+	//int n; cout << "Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР°: "; cin >> n;
 	const int n = 5;
 	int arr[n];
 	for (int i = 0; i < n; i++)
 	{
-		cout << "Введите число в архиве номер " << i + 1 << "/5: ";
+		cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РІ Р°СЂС…РёРІРµ РЅРѕРјРµСЂ " << i + 1 << "/5: ";
 		int arr_num; cin >> arr_num;
 		arr[i] = arr_num;
 	}
 	cout << endl;
-	for (int i = 0; i < n; i++)cout << arr[i] << " ";//попорядку
+	for (int i = 0; i < n; i++)cout << arr[i] << " ";//РїРѕРїРѕСЂСЏРґРєСѓ
 	cout << endl;
-	for (int i = n - 1; i >= 0; i--)cout << arr[i] << " ";//в обратном порядке
+	for (int i = n - 1; i >= 0; i--)cout << arr[i] << " ";//РІ РѕР±СЂР°С‚РЅРѕРј РїРѕСЂСЏРґРєРµ
 	cout << endl;
 	int sum = 0;
-	for (int i = 0; i < n; i++) sum += arr[i];//сумма
+	for (int i = 0; i < n; i++) sum += arr[i];//СЃСѓРјРјР°
 	cout << sum;
 	cout << endl;
-	cout << (double)sum / n;//среднеарифметическое
+	cout << (double)sum / n;//СЃСЂРµРґРЅРµР°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ
 	cout << endl;
 	int arr_min=0, arr_max = 0;
 	for (int i = 0; i < n; i++)
 	{
-		if (i == 0)arr_min = arr_max = arr[i];//отправная точка распределения макс/мин
+		if (i == 0)arr_min = arr_max = arr[i];//РѕС‚РїСЂР°РІРЅР°СЏ С‚РѕС‡РєР° СЂР°СЃРїСЂРµРґРµР»РµРЅРёСЏ РјР°РєСЃ/РјРёРЅ
 		if (arr[i] > arr_max)arr_max = arr[i];
 		if (arr[i] < arr_min)arr_min = arr[i];
 	}
