@@ -1,11 +1,11 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 void main()
 {
 	setlocale(LC_ALL, "");
-	cout << "Êîíâåðòàöèÿ äåñÿòè÷íîãî ÷èñëà â äâîè÷íîå." << endl;
-	cout << "Ââåäèòå äåñÿòè÷íîå ÷èñëî: "; int a; cin >> a;
+	cout << "ÐšÐ¾Ð½Ð²ÐµÑ€Ñ‚Ð°Ñ†Ð¸Ñ Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ð¾Ð³Ð¾ Ñ‡Ð¸ÑÐ»Ð° Ð² Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ðµ." << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: "; int a; cin >> a;
 	int b = a;
 	int ost = 0;
 	int ii;
@@ -18,7 +18,7 @@ void main()
 	}
 	for (int i = ii - 1; i >= 0; i--)cout << arr[i];
 	cout << endl;
-	cout << "Êîíâåðòàöèÿ äåñÿòè÷íîãî ÷èñëà â øåñòíàäöàòèðè÷íîå." << endl;
+	cout << "ÐšÐ¾Ð½Ð²ÐµÑ€Ñ‚Ð°Ñ†Ð¸Ñ Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ð¾Ð³Ð¾ Ñ‡Ð¸ÑÐ»Ð° Ð² ÑˆÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚Ð¸Ñ€Ð¸Ñ‡Ð½Ð¾Ðµ." << endl;
 	int ost_hex = 0;
 	int iii;
 	int arr_hex[32] = {};

@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 #include<Windows.h>
 #define TAB " "
@@ -12,7 +12,7 @@ void main()
 	for (int i = 0; i < n; i++)cout << arr[i] << TAB;
 	cout << endl;
 	int number_of_shifts;
-	cout << "Ââåäèòå ñäâèã âëåâî: "; cin >> number_of_shifts;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ´Ð²Ð¸Ð³ Ð²Ð»ÐµÐ²Ð¾: "; cin >> number_of_shifts;
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		int buffer = arr[0];
@@ -22,7 +22,7 @@ void main()
 		arr[n - 1] = buffer;
 		for (int i = 0; i < n; i++)cout << arr[i] << TAB;
 	}
-	cout <<endl<< "Ââåäèòå ñäâèã âïðàâî: "; cin >> number_of_shifts;
+	cout <<endl<< "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ´Ð²Ð¸Ð³ Ð²Ð¿Ñ€Ð°Ð²Ð¾: "; cin >> number_of_shifts;
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		int buffer = arr[n-1];
