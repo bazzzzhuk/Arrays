@@ -22,6 +22,7 @@ void main()
 	int ost_hex = 0;
 	int iii;
 	int arr_hex[32] = {};
+	const int ar_hex[16] = { '0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F' };
 	for (iii = 0; b >= 1; iii++)
 	{
 		ost = b % 16;
@@ -29,7 +30,7 @@ void main()
 		arr_hex[iii] = ost;
 	}
 	for (int i = iii - 1; i >= 0; i--)
-		if (arr_hex[i] >= 0 && arr_hex[i] < 10)cout << arr_hex[i];
+		/*if (arr_hex[i] >= 0 && arr_hex[i] < 10)cout << arr_hex[i];
 		else {
 			switch (arr_hex[i])
 			{
@@ -40,6 +41,9 @@ void main()
 			case 14: cout << "E"; break;
 			case 15: cout << "F"; break;
 			}
-		}
+		}*/
+	{
+		cout << (char)ar_hex[arr_hex[i]];
+	}
 	cout << endl;
 }
