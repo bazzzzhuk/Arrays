@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 #define LINE for (int i = 0; i < 26; i++)cout << "-"; cout <<endl;
 
@@ -21,21 +21,21 @@ void main()
 	{
 		for (int ii = 0; ii < COLS; ii++)
 		{
-			arr[i][ii] = rand() % 10;// UNIQUE 2, но до 10
-			arr_sum[arr[i][ii]]++; // Подсчёт одинаковых цифр
-			sum += arr[i][ii];// Сумма
-			cout << arr[i][ii] << "\t"; //вывод
-			if (arr[i][ii] > arr_max)arr_max = arr[i][ii]; //максимальное число
-			if (arr[i][ii] < arr_min)arr_min = arr[i][ii]; // минимальное число
+			arr[i][ii] = rand() % 10;// UNIQUE 2, РЅРѕ РґРѕ 10
+			arr_sum[arr[i][ii]]++; // РџРѕРґСЃС‡С‘С‚ РѕРґРёРЅР°РєРѕРІС‹С… С†РёС„СЂ
+			sum += arr[i][ii];// РЎСѓРјРјР°
+			cout << arr[i][ii] << "\t"; //РІС‹РІРѕРґ
+			if (arr[i][ii] > arr_max)arr_max = arr[i][ii]; //РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ
+			if (arr[i][ii] < arr_min)arr_min = arr[i][ii]; // РјРёРЅРёРјР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ
 		}
 		cout << endl;
 	}
 	LINE
-		for (int i = 0; i < 10; i++) cout << " В нём цифр \"" << i << "\" --> " << arr_sum[i] << " шт." << endl;
+		for (int i = 0; i < 10; i++) cout << " Р’ РЅС‘Рј С†РёС„СЂ \"" << i << "\" --> " << arr_sum[i] << " С€С‚." << endl;
 	LINE
-		cout << "Сумма чисел массива: " << sum << endl;
+		cout << "РЎСѓРјРјР° С‡РёСЃРµР» РјР°СЃСЃРёРІР°: " << sum << endl;
 	LINE
-		cout << "Средне-арифметическое \n\t  цифр масcива: " << sum / (ROWS * COLS) << endl;
+		cout << "РЎСЂРµРґРЅРµ-Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ \n\t  С†РёС„СЂ РјР°СЃcРёРІР°: " << sum / (ROWS * COLS) << endl;
 	LINE
 		cout << "min " << arr_min << endl;
 	cout << "max " << arr_max << endl;
@@ -46,7 +46,7 @@ void main()
 	int maxRand = 90, minRand = 70;
 	bool unique = false;
 
-	cout << "UNIQUE_range " << minRand << " -- " << maxRand << endl; LINE //Уникальный массив 70 - 90
+	cout << "UNIQUE_range " << minRand << " -- " << maxRand << endl; LINE //РЈРЅРёРєР°Р»СЊРЅС‹Р№ РјР°СЃСЃРёРІ 70 - 90
 		for (int i = 0; i < ROWS; i++)
 		{
 
@@ -69,7 +69,7 @@ void main()
 		}
 	for (int i = 0; i < ROWS; i++)
 	{
-		for (int ii = 0; ii < COLS; ii++) cout << arr[i][ii] << "\t"; //вывод
+		for (int ii = 0; ii < COLS; ii++) cout << arr[i][ii] << "\t"; //РІС‹РІРѕРґ
 		cout << endl;
 	}
 	LINE
@@ -106,7 +106,7 @@ void main()
 	LINE
 		for (int i = 0; i < ROWS; i++)
 		{
-			for (int ii = 0; ii < COLS; ii++) cout << arr[i][ii] << "\t"; //вывод
+			for (int ii = 0; ii < COLS; ii++) cout << arr[i][ii] << "\t"; //РІС‹РІРѕРґ
 			cout << endl;
 		}
 
