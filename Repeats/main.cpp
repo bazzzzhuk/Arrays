@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 void main()
@@ -13,8 +13,8 @@ void main()
 		arr[i] = rand() % (arr_max - arr_min) + arr_min;
 		arr_sum[arr[i]]++;
 	}
-	cout << "Ìàññèâ ñîñòîèò èç: ";
+	cout << "ÐœÐ°ÑÑÐ¸Ð² ÑÐ¾ÑÑ‚Ð¾Ð¸Ñ‚ Ð¸Ð·: ";
 	for (int i = 0; i < n; i++) cout << arr[i] << " ";
 	cout << endl;
-	for (int i = 0; i < n /2 ; i++) cout << "Â í¸ì öèôð \"" << i<< "\" -> " << arr_sum[i]<<" øò."<<endl;
+	for (int i = 0; i < n /2 ; i++) cout << "Ð’ Ð½Ñ‘Ð¼ Ñ†Ð¸Ñ„Ñ€ \"" << i<< "\" -> " << arr_sum[i]<<" ÑˆÑ‚."<<endl;
 }
