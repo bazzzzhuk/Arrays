@@ -27,7 +27,7 @@ void main()
 	{
 		for (int ii = 0; ii < COLS; ii++)
 		{
-			arr[i][ii] = rand() % 20;// UNIQUE 2, но до 10
+			arr[i][ii] = rand() % 10;// UNIQUE 2, но до 10 - не стал переделывать, ошибку свою знаю, ниже - как надо))
 			arr_sum[arr[i][ii]]++; // Подсчёт одинаковых цифр
 			sum += arr[i][ii];// Сумма
 			//cout << arr[i][ii] << "\t"; //вывод
